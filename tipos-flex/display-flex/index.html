@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <h1>display: block;</h1>
+    <h2 class="container">Elemento de bloco pega 10 do container neste caso esta limitado a 400px pq foi add a propiedade </h2>
+    <section class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+
+    <h1>display: flex;</h1>
+    <h2 class="container">Quando se adiciona o item display flex ele ocupa o tamanho exato do conteúdo </h2>
+    <section class="container flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </section>
+    
+    <h1>display: flex -  flex;</h1>
+    <h2 class="container"></h2>
+    <section class="container flex">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+    </section>
+    
+    <h1>display: flex -  flex-wrap;</h1>
+    <h2 class="container">Essa propriedade flex-wrap define se o item quebra a linha ou não. Sempre que adicionamos o "display:flex" por padrão ele vem nowrap ou seja : "flex-wrap: nowrap"</h2>
+    <section class="container flex flex-wrap">
+        <div class="item">Teste 1</div>
+        <div class="item">Teste 2</div>
+        <div class="item">Teste 3</div>
+        <div class="item">Teste 4</div>
+        <div class="item">Teste 5</div>
+        <div class="item">Teste 6</div>
+        <div class="item">Teste 7</div>
+    </section>
+    
+    <h1>display: flex; // flex:1</h1>
+    <h2 class="container">Neste caso foi adicionado ao item dentro do disply:flex uma propriedade chamada "flex:1" ele ocupa o tamanho máximo do container, ou seja, ele faz o preenchimento dos itens</h2>
+    <section class="container flex">
+        <div class="item flex-item-1">Teste 1</div>
+        <div class="item flex-item-1">Teste 2</div>
+        <div class="item flex-item-1">Teste 3</div>
+    </section>
+
+
+    
+</body>
+</html>
